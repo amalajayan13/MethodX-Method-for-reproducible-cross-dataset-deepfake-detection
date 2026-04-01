@@ -1,0 +1,24 @@
+{
+  "run_mode": "paper",
+  "device": "cuda",
+  "batch_size": 24,
+  "epochs_stage1": 15,
+  "epochs_stage2": 35,
+  "frames_per_video": 8,
+  "selected_threshold": 0.15,
+  "threshold_selection_mode": "constraint_satisfied",
+  "threshold_constraints": {
+    "min_recall": 0.9,
+    "min_precision": 0.8
+  },
+  "best_stage1_checkpoint": "outputs_methodx_final_1\\checkpoints\\best_stage1.pt",
+  "best_stage2_checkpoint": "outputs_methodx_final_1\\checkpoints\\best_stage2.pt",
+  "stage1_history_json": "outputs_methodx_final_1\\logs\\stage1_history.json",
+  "stage2_history_json": "outputs_methodx_final_1\\logs\\stage2_history.json",
+  "validation_metrics_json": "outputs_methodx_final_1\\results\\val_best_metrics.json",
+  "test_metrics_json": "outputs_methodx_final_1\\results\\test_metrics.json",
+  "overall_test_csv": "outputs_methodx_final_1\\results\\tables\\overall_test_metrics.csv",
+  "per_domain_test_csv": "outputs_methodx_final_1\\results\\tables\\per_domain_test_metrics.csv",
+  "training_curve_png": "outputs_methodx_final_1\\results\\figures\\training_history.png",
+  "config_json": "outputs_methodx_final_1\\results\\config.json"
+}
